@@ -1,0 +1,68 @@
+[Session-A]
+
+2026-02-01T09:18:44Z node=7 offset=44102
+mary.kate@outlook.com|4000123412341234|$299.99|https://shop.example.net/checkout
+primary contact phone (415) 867-5309
+invalid email detected: support@.helpdesk.io route dropped
+user tried link htp://example.com/login then pasted https://example.com/login?next=/home
+payload found: https://tracker.example.org/click?u=<script>alert(1)</script>
+
+rx_warn retry=2 payload="alerts@system.io 4111-1111-1111-4321 USD 89.999 call-back 212-555-8812"
+cache_block: user@@mail.com|$2,49.99|http://example|#FlashSale#2026 phone=415-555-0199
+
+trace_line: visited https://blog.example.net/post/launch and https://example.net/users/profile
+spill_frame=1042 data="mary.kate+news@outlook.com 4111 1111 1111 888 $$49.00 support line 646.555.3322"
+mirror=https://cdn.sub-example.org/assets/main.js
+
+chunk_tail: billing@finance.co.uk|5500-0000-0000-8899|$9.5|#BillingUpdate call (718) 555-2049
+dup_entry: demo@company|1234-5678-9012-99999|$19.00|https:///bad.url phone 718-555-2050
+
+stream_err: feedback@product.io javascript:alert(1) 411111111111
+last inbound call from 917 555 7741 at 09:21
+
+flush: USD 19.999 $0.49 #promo! ## #Q1#2026 call center 800-555-1212
+
+
+
+[Session-B]
+
+cache pulled 09:18:44Z retry=3
+user typed email mary.kate@outlook.com
+ then corrected to marykate@outlook,com
+ pasted https://shop.example.net?src=email_campaign
+user requested call-back at (800) 555 3434
+
+payment notes:
+paid $299.99 yesterday
+then wrote “was it $299,99 or $2,99.99??”
+cards tried 4111 1111 1111 0000 declined
+then 5500000000004444 accepted
+follow-up verification call 212-555-7744
+
+marketing noise #FlashSale#2026 mixed with https://cdn.sub-example.org/assets/main.js?page=2
+and broken link http://example
+
+script injection attempt after email admin@backend.io
+javascript:alert(1)
+<script>
+
+support thread contacts:
+billing@finance.co.uk
+feedback@product.io
+test@company
+support desk numbers: (415) 555-0188, 415-555-0190
+
+chargeback log:
+5500-0000-0000-1122 success
+1234-5678-9012-34567 failed
+customer reached at 646-555-9901
+
+currency spam $$49.00 $9.5 $9.50 USD 19.999
+hashtags merged #BillingUpdate #promo! # #Q1#2026
+email backup mary.kate+news@outlook.com
+also seen user@@mail.com
+
+mirror urls:
+https://evil.example.net/%3Cscript%3Ealert(1)%3C%2Fscript%3E
+https://example.com/search?q=%3Cscript%3Ealert(1)%3C%2Fscript%3E
+https://example.com/account?redirect=%2Fdashboard
